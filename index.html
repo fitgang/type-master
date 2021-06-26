@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <title>TypeMaster</title>
+</head>
+
+<body>
+    <div id="game-container" class="containers">
+        <h1 id=typemaster>TypeMaster</h1>
+        <div id="stats">
+            <div id="time">
+                Time
+            </div>
+            <div id="score">
+                Score
+            </div>
+            <span></span>
+        </div>
+        <p id="random-word"></p>
+        <button type="button" class="play">Play</button>
+        <input type="text" spellcheck="false">
+    </div>
+    <div id="game-over" class="containers none"></div>
+    <button type="button" id="show-instructions">Need Help!</button>
+    <div class="containers instructions none">
+        <div>
+            <button type="button" id="close-instructions">
+                <svg height="20px" width="20px">
+                    <line x1="0" y1="0" x2="20" y2="20" />
+                    <line x1="0" y1="20" x2="20" y2="0" />
+                </svg>
+            </button>
+            <h2>Instructions:</h2>
+            <ol>
+                <li>Click on <strong>Play</strong> to start the game.</li>
+                <li>A random <strong>word</strong> will show up on th screen with start of a <strong>timer of 10 seconds</strong>.</li>
+                <li>You have to <em>type</em> the same word in the <strong>text field</strong> <em>before the timer runs out</em>.</li>
+                <li>Every time you <em>enter the right word</em>, the <em>time increases by 5 seconds</em>.</li>
+                <li>As you <em>score up</em> in the game, the added time decreases from 5 seconds upto 1 second.</li>
+                <li>If the timer hits zero, <strong>GAME OVER!</strong></li>
+            </ol>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

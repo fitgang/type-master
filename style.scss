@@ -86,13 +86,10 @@ button {
     background: var(--secondary-color);
 }
 
-button:hover {
+button:hover,
+button:active {
     background: var(--font-color);
     color: var(--secondary-color);
-}
-
-.play:active {
-    background: var(--primary-color);
 }
 
 input {
@@ -111,7 +108,8 @@ input {
     background: var(--primary-color);
 }
 
-#show-instructions:hover {
+#show-instructions:hover,
+#show-instructions:active {
     background: var(--font-color);
     color: var(--primary-color);
 }
@@ -163,7 +161,8 @@ input {
     }
 }
 
-#close-instructions:hover {
+#close-instructions:hover,
+#close-instructions:active {
     svg {
         stroke: var(--secondary-color);
     }

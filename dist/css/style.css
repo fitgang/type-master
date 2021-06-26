@@ -120,8 +120,8 @@ input {
 }
 
 #show-instructions {
-    position: absolute;
-    bottom: 4rem;
+    position: relative;
+    top: 5rem;
     background: var(--primary-color);
 }
 
